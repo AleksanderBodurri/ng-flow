@@ -1,0 +1,31 @@
+<div class="layout">
+  <aside class="sidebar">
+    <header class="sidebar__head">
+      <a routerLink="/" class="brand">ng-flow</a>
+      <span class="count">{{ count() }} demos</span>
+    </header>
+    <input
+      class="filter"
+      type="search"
+      name="demo-filter"
+      placeholder="Filter demos…"
+      [value]="filter()"
+      (input)="onFilter($event)"
+      aria-label="Filter demos"
+    />
+    <nav class="nav">
+      @for (route of routes(); track route.path) {
+        <a
+          class="nav__link"
+          [routerLink]="['/', route.path]"
+          routerLinkActive="nav__link--active"
+        >{{ route.title }}</a>
+      } @empty {
+        <p class="nav__empty">No demos yet.</p>
+      }
+    </nav>
+  </aside>
+  <main class="main">
+    <router-outlet />
+  </main>
+</div>

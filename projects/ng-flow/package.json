@@ -1,0 +1,42 @@
+{
+  "name": "@aleksanderbodurri/ng-flow",
+  "version": "0.0.1",
+  "description": "Angular library for building node-based editors and interactive flow charts. An Angular port of React Flow (@xyflow), built on the framework-agnostic @xyflow/system core. Standalone, zoneless, signal-based.",
+  "keywords": [
+    "angular",
+    "ng-flow",
+    "flow",
+    "node-based",
+    "node-editor",
+    "diagram",
+    "flowchart",
+    "graph",
+    "workflow",
+    "react-flow",
+    "xyflow",
+    "signals",
+    "standalone"
+  ],
+  "license": "MIT",
+  "author": "Aleksander Bodurri",
+  "homepage": "https://ng-flow.web.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksanderBodurri/ng-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AleksanderBodurri/ng-flow/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/cdk": "^22.0.1",
+    "@xyflow/system": "^0.0.77",
+    "classcat": "^5.0.5",
+    "zustand": "^4.5.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
