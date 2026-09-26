@@ -214,6 +214,7 @@ export interface ReactFlowProps<NodeType extends Node = Node, EdgeType extends E
   connectOnClick?: boolean;
   /** @default 'bottom-right' */
   attributionPosition?: PanelPosition;
+  /** Attribution is hidden by default; pass `{ hideAttribution: false }` to show it. */
   proOptions?: ProOptions;
   /** @default true */
   elevateNodesOnSelect?: boolean;

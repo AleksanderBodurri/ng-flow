@@ -330,6 +330,7 @@ export class NgFlow<NodeType extends Node = Node, EdgeType extends Edge = Edge> 
   readonly fitViewOptions = input<ReactFlowProps['fitViewOptions']>();
   readonly connectOnClick = input<ReactFlowProps['connectOnClick']>();
   readonly attributionPosition = input<PanelPosition>('bottom-right');
+  /** Attribution is hidden by default; pass `{ hideAttribution: false }` to show it. */
   readonly proOptions = input<ReactFlowProps['proOptions']>();
   readonly elevateNodesOnSelect = input<boolean>(true);
   readonly elevateEdgesOnSelect = input<boolean>(false);

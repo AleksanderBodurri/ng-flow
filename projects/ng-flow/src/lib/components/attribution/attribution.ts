@@ -4,10 +4,10 @@ import type { PanelPosition, ProOptions } from '@xyflow/system';
 import { Panel } from '../panel/panel';
 
 /**
- * Renders the ng-flow attribution link in a corner `<ng-flow-panel>`.
+ * Optionally renders the ng-flow attribution link in a corner `<ng-flow-panel>`.
  *
- * The Angular port of React Flow's internal `<Attribution />`. Renders nothing when
- * `proOptions.hideAttribution` is set.
+ * The Angular port of React Flow's internal `<Attribution />`. Hidden by default; set
+ * `proOptions.hideAttribution` to `false` to show it.
  *
  * @public
  */
@@ -16,7 +16,7 @@ import { Panel } from '../panel/panel';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [Panel],
   template: `
-    @if (!proOptions()?.hideAttribution) {
+    @if (proOptions()?.hideAttribution === false) {
       <ng-flow-panel
         [position]="position()"
         [className]="'react-flow__attribution'"
