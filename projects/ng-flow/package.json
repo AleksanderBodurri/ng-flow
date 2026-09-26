@@ -1,6 +1,6 @@
 {
   "name": "@aleksanderbodurri/ng-flow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular library for building node-based editors and interactive flow charts. An Angular port of React Flow (@xyflow), built on the framework-agnostic @xyflow/system core. Standalone, zoneless, signal-based.",
   "keywords": [
     "angular",
